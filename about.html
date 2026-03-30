@@ -18,7 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -66,6 +68,12 @@
           <h1>We create photographs that feel lived in, elegant, and true.</h1>
           <p class="about-lead">S&amp;D Photography is built around the belief that the best images are never forced. We direct with intention, watch for the in-between moments, and craft galleries that feel polished without losing the emotion that made them worth capturing.</p>
           <p>From weddings and engagements to portraits, family sessions, and event coverage, our approach stays the same: calm guidance, thoughtful composition, and imagery that still feels honest years later.</p>
+          <div class="story-badges" aria-label="Photography specialties">
+            <span class="badge rounded-pill text-bg-dark">Weddings</span>
+            <span class="badge rounded-pill text-bg-light">Portraits</span>
+            <span class="badge rounded-pill text-bg-dark">Families</span>
+            <span class="badge rounded-pill text-bg-light">Events</span>
+          </div>
           <div class="about-hero-actions">
             <a href="contact.html" class="btn btn-primary">Book a Session</a>
             <a href="index.html#portfolio" class="btn btn-secondary">View Portfolio</a>
@@ -73,22 +81,22 @@
         </div>
         <div class="about-hero-collage" aria-label="Selected photography highlights">
           <figure class="about-collage-card about-collage-tall">
-            <img src="Aboutus/Aboutus1.jpg" alt="Bride photographed against a stone wall">
+            <img src="media/Aboutus/Aboutus1.jpg" alt="Bride photographed against a stone wall" decoding="async">
           </figure>
           <div class="about-collage-stack">
             <figure class="about-collage-card">
-              <img src="Wedding&Engagement/Wedding&Engagement12.jpg" alt="Wedding couple portrait during golden hour">
+              <img src="media/Wedding&Engagement/Wedding&Engagement12.jpg" alt="Wedding couple portrait during golden hour" decoding="async">
             </figure>
             <figure class="about-collage-card">
-              <img src="Portrait/Portrait7.jpg" alt="Portrait session with soft natural light">
+              <img src="media/Portrait/Portrait7.jpg" alt="Portrait session with soft natural light" decoding="async">
             </figure>
           </div>
           <div class="about-collage-stack about-collage-offset">
             <figure class="about-collage-card">
-              <img src="Family/Family4.jpg" alt="Family sharing a candid moment outdoors">
+              <img src="media/Family/Family4.jpg" alt="Family sharing a candid moment outdoors" decoding="async">
             </figure>
             <figure class="about-collage-card">
-              <img src="Portfolio/Portfolio6.jpg" alt="Behind-the-scenes photography detail">
+              <img src="media/Portfolio/Portfolio6.jpg" alt="Behind-the-scenes photography detail" decoding="async">
             </figure>
           </div>
         </div>
@@ -127,7 +135,23 @@
     <section class="about-feature-banner">
       <div class="about-shell">
         <div class="about-banner-frame">
-          <img src="Wedding&Engagement/Wedding&Engagement4.jpg" alt="Wedding portrait captured by S&amp;D Photography">
+          <img src="media/Wedding&Engagement/Wedding&Engagement4.jpg" alt="Wedding portrait captured by S&amp;D Photography" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="media-reel-section" aria-labelledby="media-reel-title">
+      <div class="about-shell media-reel-grid">
+        <div class="media-reel-copy">
+          <p class="about-section-label">Embedded video</p>
+          <h2 id="media-reel-title">A sample behind-the-scenes reel for multimedia presentation.</h2>
+          <p>This section adds an accessible video element so the project includes images, animation, and embedded motion media. Replace this sample clip with your own branded reel before final submission if you have one available.</p>
+        </div>
+        <div class="media-reel-player ratio ratio-16x9">
+          <video controls playsinline preload="metadata" poster="media/Portfolio/Portfolio6.jpg" aria-label="Sample behind-the-scenes video reel">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            Your browser does not support embedded video playback.
+          </video>
         </div>
       </div>
     </section>
@@ -176,21 +200,21 @@
         </div>
         <div class="about-process-grid">
           <article class="about-process-card">
-            <img src="Portfolio/Portfolio2.jpg" alt="Camera equipment prepared for a photo session">
+            <img src="media/Portfolio/Portfolio2.jpg" alt="Camera equipment prepared for a photo session" loading="lazy" decoding="async">
             <div class="about-process-copy">
               <h3>Plan with purpose</h3>
               <p>We start with your vision, location ideas, timeline needs, and the atmosphere you want the photos to hold.</p>
             </div>
           </article>
           <article class="about-process-card">
-            <img src="Portrait/Portrait3.jpg" alt="Portrait session in progress">
+            <img src="media/Portrait/Portrait3.jpg" alt="Portrait session in progress" loading="lazy" decoding="async">
             <div class="about-process-copy">
               <h3>Photograph with intention</h3>
               <p>During the session we balance guided portraits with room for spontaneous interactions and genuine reactions.</p>
             </div>
           </article>
           <article class="about-process-card">
-            <img src="Portfolio/Portfolio5.jpg" alt="Editing and reviewing images after a session">
+            <img src="media/Portfolio/Portfolio5.jpg" alt="Editing and reviewing images after a session" loading="lazy" decoding="async">
             <div class="about-process-copy">
               <h3>Deliver with care</h3>
               <p>We refine the final gallery so it feels polished, consistent, and ready to print, share, and revisit.</p>
@@ -200,6 +224,53 @@
         <div class="about-cta-row">
           <a href="contact.html" class="btn btn-primary">Start Your Enquiry</a>
           <a href="index.html#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="about-faq-title">
+      <div class="about-shell faq-shell">
+        <div class="about-section-intro">
+          <p class="about-section-label">FAQ</p>
+          <h2 id="about-faq-title">Common questions before booking.</h2>
+        </div>
+        <div class="accordion faq-accordion" id="aboutFaqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="about-faq-heading-one">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#about-faq-one" aria-expanded="false" aria-controls="about-faq-one">
+                How hands-on is your direction during a session?
+              </button>
+            </h3>
+            <div id="about-faq-one" class="accordion-collapse collapse" aria-labelledby="about-faq-heading-one" data-bs-parent="#aboutFaqAccordion">
+              <div class="accordion-body">
+                We guide poses and movement when needed, then leave room for genuine reactions so the gallery still feels natural.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="about-faq-heading-two">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#about-faq-two" aria-expanded="false" aria-controls="about-faq-two">
+                Do you help with planning and locations?
+              </button>
+            </h3>
+            <div id="about-faq-two" class="accordion-collapse collapse" aria-labelledby="about-faq-heading-two" data-bs-parent="#aboutFaqAccordion">
+              <div class="accordion-body">
+                Yes. We help shape timing, recommend locations, and plan around light so the session feels organised and relaxed.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="about-faq-heading-three">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#about-faq-three" aria-expanded="false" aria-controls="about-faq-three">
+                How long does gallery delivery usually take?
+              </button>
+            </h3>
+            <div id="about-faq-three" class="accordion-collapse collapse" aria-labelledby="about-faq-heading-three" data-bs-parent="#aboutFaqAccordion">
+              <div class="accordion-body">
+                Most sessions are delivered within two weeks, with clear communication if event coverage needs a different turnaround.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -214,10 +285,10 @@
         <nav class="footer-nav" aria-label="Footer Quick Links">
         <h4>Quick Links</h4>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         </nav>
         <nav class="footer-services" aria-label="Footer Services Links">
@@ -226,7 +297,7 @@
             <li><a href="wedding.html">Wedding</a></li>
             <li><a href="portrait.html">Portrait</a></li>
             <li><a href="family.html">Family</a></li>
-            <li><a href="events&commercial.html">Events</a></li>
+            <li><a href="events.html">Events</a></li>
         </ul>
     </nav>
         <div class="footer-contact">
@@ -242,6 +313,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

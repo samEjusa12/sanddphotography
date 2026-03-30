@@ -18,7 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -60,9 +62,14 @@
     <section class="story-showcase">
       <div class="story-shell">
         <h1 class="story-page-title">Wedding &amp; Engagement Photography</h1>
+        <div class="story-badges" aria-label="Wedding and engagement highlights">
+          <span class="badge rounded-pill text-bg-dark">Proposals</span>
+          <span class="badge rounded-pill text-bg-light">Engagements</span>
+          <span class="badge rounded-pill text-bg-dark">Ceremonies</span>
+        </div>
         <div class="story-panel">
           <div class="story-image">
-            <img src="Wedding&Engagement/Wedding&Engagement1.jpg" alt="Wedding and engagement photography">
+            <img src="media/Wedding&Engagement/Wedding&Engagement1.jpg" alt="Wedding and engagement photography" decoding="async">
           </div>
           <div class="story-copy">
             <h2>Celebrate your story</h2>
@@ -82,15 +89,62 @@
           <p>A glimpse of the romantic, heartfelt, and beautifully composed frames we create for couples who want their memories preserved with elegance.</p>
         </div>
         <div class="story-gallery-grid">
-          <img src="Wedding&Engagement/Wedding&Engagement2.jpg" alt="Couple portrait outdoors">
-          <img src="Wedding&Engagement/Wedding&Engagement3.jpg" alt="Candid engagement moment">
-          <img src="Wedding&Engagement/Wedding&Engagement4.jpg" alt="Camera detail and wedding styling">
-          <img src="Wedding&Engagement/Wedding&Engagement5.jpg" alt="Romantic wedding portrait">
-          <img src="Wedding&Engagement/Wedding&Engagement6.jpg" alt="Wedding celebration detail">
+          <img src="media/Wedding&Engagement/Wedding&Engagement2.jpg" alt="Couple portrait outdoors" loading="lazy" decoding="async">
+          <img src="media/Wedding&Engagement/Wedding&Engagement3.jpg" alt="Candid engagement moment" loading="lazy" decoding="async">
+          <img src="media/Wedding&Engagement/Wedding&Engagement4.jpg" alt="Camera detail and wedding styling" loading="lazy" decoding="async">
+          <img src="media/Wedding&Engagement/Wedding&Engagement5.jpg" alt="Romantic wedding portrait" loading="lazy" decoding="async">
+          <img src="media/Wedding&Engagement/Wedding&Engagement6.jpg" alt="Wedding celebration detail" loading="lazy" decoding="async">
         </div>
         <div class="story-cta-row">
           <a href="contact.html" class="btn btn-primary">Book now</a>
           <a href="index.html#services" class="btn btn-secondary">Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="wedding-faq-title">
+      <div class="story-shell faq-shell">
+        <div class="about-section-intro">
+          <p class="about-section-label">FAQ</p>
+          <h2 id="wedding-faq-title">What couples usually ask.</h2>
+        </div>
+        <div class="accordion faq-accordion" id="weddingFaqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="wedding-faq-heading-one">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wedding-faq-one" aria-expanded="false" aria-controls="wedding-faq-one">
+                Do you cover both candid moments and portraits?
+              </button>
+            </h3>
+            <div id="wedding-faq-one" class="accordion-collapse collapse" aria-labelledby="wedding-faq-heading-one" data-bs-parent="#weddingFaqAccordion">
+              <div class="accordion-body">
+                Yes. The coverage balances guided portraits with unobtrusive documentary moments so the gallery feels complete.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="wedding-faq-heading-two">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wedding-faq-two" aria-expanded="false" aria-controls="wedding-faq-two">
+                Can you help build a photo-friendly timeline?
+              </button>
+            </h3>
+            <div id="wedding-faq-two" class="accordion-collapse collapse" aria-labelledby="wedding-faq-heading-two" data-bs-parent="#weddingFaqAccordion">
+              <div class="accordion-body">
+                Absolutely. We help plan around ceremony timing, portraits, and light so the day stays smooth.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="wedding-faq-heading-three">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wedding-faq-three" aria-expanded="false" aria-controls="wedding-faq-three">
+                Do you photograph intimate weddings and elopements?
+              </button>
+            </h3>
+            <div id="wedding-faq-three" class="accordion-collapse collapse" aria-labelledby="wedding-faq-heading-three" data-bs-parent="#weddingFaqAccordion">
+              <div class="accordion-body">
+                Yes. Smaller celebrations are approached with the same care, direction, and storytelling attention as full-day weddings.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -105,10 +159,10 @@
         <nav class="footer-nav" aria-label="Footer Quick Links">
         <h4>Quick Links</h4>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         </nav>
         <nav class="footer-services" aria-label="Footer Services Links">
@@ -117,7 +171,7 @@
             <li><a href="wedding.html">Wedding</a></li>
             <li><a href="portrait.html">Portrait</a></li>
             <li><a href="family.html">Family</a></li>
-            <li><a href="events&commercial.html">Events</a></li>
+            <li><a href="events.html">Events</a></li>
         </ul>
     </nav>
         <div class="footer-contact">
@@ -133,6 +187,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
