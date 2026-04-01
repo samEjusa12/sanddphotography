@@ -143,19 +143,24 @@ header {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 1rem 3.25rem;
+  padding: 0.75rem 3.25rem;
 }
 .logo {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  width: auto;
   text-decoration: none;
 }
 
 .logo img {
   display: block;
   width: auto;
-  height: 4rem;
+  height: 4.25rem;
+  max-width: 4.25rem;
+  max-height: 4.25rem;
+  object-fit: contain;
 }
 .brand-ampersand {
   color: var(--gold);
@@ -1928,7 +1933,9 @@ body[data-theme='dark'] .testimonial-card-green .testimonial-badge {
     font-size: 2.3rem;
   }
   .logo img {
-    height: 3.4rem;
+    height: 3.2rem;
+    max-width: 3.2rem;
+    max-height: 3.2rem;
   }
   .nav-links {
     position: absolute;
