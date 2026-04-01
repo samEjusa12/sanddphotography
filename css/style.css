@@ -146,12 +146,16 @@ header {
   padding: 1rem 3.25rem;
 }
 .logo {
-  font-family: var(--font-heading);
-  font-size: 2.8rem;
-  color: var(--text-primary);
-  font-weight: bold;
-  letter-spacing: 0.01em;
-  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logo img {
+  display: block;
+  width: auto;
+  height: 4rem;
 }
 .brand-ampersand {
   color: var(--gold);
@@ -1923,8 +1927,8 @@ body[data-theme='dark'] .testimonial-card-green .testimonial-badge {
   .brand-subtitle {
     font-size: 2.3rem;
   }
-  .logo {
-    font-size: 2.35rem;
+  .logo img {
+    height: 3.4rem;
   }
   .nav-links {
     position: absolute;
