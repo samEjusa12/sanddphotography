@@ -146,12 +146,29 @@ header {
   padding: 1rem 3.25rem;
 }
 .logo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   font-family: var(--font-heading);
-  font-size: 2.8rem;
   color: var(--text-primary);
-  font-weight: bold;
-  letter-spacing: 0.01em;
   line-height: 1;
+  flex-shrink: 0;
+}
+
+.logo .brand-mark {
+  display: block;
+  font-size: 2.7rem;
+  line-height: 0.88;
+  letter-spacing: 0.04em;
+}
+
+.logo .brand-subtitle {
+  display: block;
+  margin-top: 0.08rem;
+  font-size: 1.05rem;
+  line-height: 1;
+  letter-spacing: 0.03em;
 }
 .brand-ampersand {
   color: var(--gold);
@@ -1923,8 +1940,11 @@ body[data-theme='dark'] .testimonial-card-green .testimonial-badge {
   .brand-subtitle {
     font-size: 2.3rem;
   }
-  .logo {
-    font-size: 2.35rem;
+  .logo .brand-mark {
+    font-size: 2.1rem;
+  }
+  .logo .brand-subtitle {
+    font-size: 0.84rem;
   }
   .nav-links {
     position: absolute;
