@@ -37,3 +37,5 @@ Known issues or notes:
 - Replace the placeholder details above before submission.
 - Manually test the site on desktop and mobile before creating the final zip file.
 - If required by the assessor, mention your multimedia types in the walkthrough: photography, animation, and SVG iconography.
+
+ use pexels.com for placeholders https://www.pexels.com/
