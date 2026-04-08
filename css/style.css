@@ -654,6 +654,12 @@ body[data-theme='dark'] .theme-toggle-icon::after {
   background: var(--gold);
   color: var(--white);
   border-color: var(--gold);
+  --bs-btn-bg: var(--gold);
+  --bs-btn-hover-bg: #b89a3d;
+  --bs-btn-active-bg: #b89a3d;
+  --bs-btn-hover-color: var(--white);
+  --bs-btn-active-color: var(--white);
+  --bs-btn-color: var(--white);
 }
 .btn-primary:hover,
 .btn-primary:focus,
